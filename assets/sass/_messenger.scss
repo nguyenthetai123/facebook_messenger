@@ -1,0 +1,49 @@
+#wpe_fb-mess{
+    position: fixed;
+    z-index: 99999;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    right: 30px;
+    &.wpe_positon_left{
+        left: 30px;
+        .wpe_button-fm{
+            float: left;
+        }
+    }
+    &.wpe_positon_top{
+        top: 80px;
+    }
+    &.wpe_positon_bottom{
+        bottom: 0;
+    }
+    .wpe_button-fm{
+        background-image: url("../image/icon.png");
+        background-size: cover;
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .fb-page.fb_iframe_widget.wpe_fm-page.open{
+        opacity: 1 !important;
+        visibility: visible !important;
+        transition: 0.3s;
+        max-height: 100%;
+        box-shadow: 0 0px 13px #ccc;
+    }
+    .fb-page.fb_iframe_widget.wpe_fm-page{
+        max-height: 0%;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: 0.3s;
+    }
+}
+.wpe_fm-page{
+    .open{
+        display:none;
+    }
+    &.reopen{
+        display: none;
+    }
+}
